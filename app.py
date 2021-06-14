@@ -49,7 +49,7 @@ def display_receipt_ocr(image_path, background_removal):
     original = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     if background_removal:
         logging.debug("Removing image background")
-        img = find_and_normalize_receipt(img=img)
+        img = find_and_normalize_document(img=img)
     else:
         img = bw_scanner(img)
     df = parse_image(img)
