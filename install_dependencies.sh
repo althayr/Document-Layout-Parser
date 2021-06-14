@@ -18,7 +18,8 @@ pip install fastai==1.0.61 \
 pip install -U argparse pytesseract opencv-python gradio scikit-image numpy pdf2image
 
 # Installing LayoutLM family libraries 
-rm -rf unilm
+sudo rm -rf unilm
 git clone https://github.com/microsoft/unilm
-cd /unilm/layoutlmft
+cd unilm/layoutlmft
 pip install .
+cd ../../
